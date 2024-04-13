@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ejercicio4 CRUD</h1>
+
+    <button onclick="crearUsuario()">Crear nuevo usuario</button>
+
+    <table id="tablaUsuarios">
+        <thead>
+            <tr>
+                <th>Num</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Foto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="modalUsuario" class="modal">
+        <div class="modal-contenido">
+            <h2>Crear usuario</h2>
+            <form id="formularioUsuario">
+                <label for="idUsuario">Num:</label>
+                <input type="text" id="idUsuario" required><br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required><br>
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" required><br>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" accept="image/*" required><br>
+                <br>
+                <button type="button" onclick="guardarUsuario()">Guardar</button>
+                <button type="button" onclick="cancelarModal()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
