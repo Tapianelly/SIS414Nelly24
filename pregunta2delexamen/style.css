@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .pregunta {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .respuesta {
+    margin-bottom: 5px;
+  }
+  
+  .opcion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .opcion input {
+    margin-right: 10px;
+  }

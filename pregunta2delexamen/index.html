@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregunta con respuesta múltiple</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <h1>Pregunta 2</h1>
+  <p class="pregunta">¿Cuales son los 2 sistemas operativos mas usados en el mundo?</p>
+
+  <div class="opcion">
+    <input type="checkbox" id="opcion1" name="respuesta" value="1">
+    <label for="opcion1">Windows</label>
+  </div>
+
+  <div class="opcion">
+    <input type="checkbox" id="opcion2" name="respuesta" value="2">
+    <label for="opcion2">Linux</label>
+  </div>
+
+  <div class="opcion">
+    <input type="checkbox" id="opcion3" name="respuesta" value="3">
+    <label for="opcion3">MacOs</label>
+  </div>
+
+  <div class="opcion">
+    <input type="checkbox" id="opcion4" name="respuesta" value="4">
+    <label for="opcion4">Osx</label>
+  </div>
+
+  <div class="opcion">
+    <input type="checkbox" id="opcion5" name="respuesta" value="5">
+    <label for="opcion5">Chrom Os</label>
+  </div>
+
+  <button onclick="verificarRespuesta()">Enviar respuesta</button>
+
+  <p id="resultado"></p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
